@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --my-main-color: #009ad8;
+  --my-main-dark-color: #1e202b;
+  --my-main-transition: 0.3s ease;
+  --my-main-padding-top: 5rem;
+  --my-main-padding-bottom: 5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  color: #bfc1c8;
+  background: var(--my-main-dark-color);
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 1rem !important;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+ul.aa-nav-link--custom {
+  -webkit-transition: var(--my-main-transition);
+  transition: var(--my-main-transition);
+}
+
+ul.aa-nav-link--custom > li {
+  margin: 0 0.3571rem;
+}
+
+ul.aa-nav-link--custom > li > a {
+  padding: 0.3571rem 1.7857rem !important;
+  border: 0.1429rem solid transparent;
+  border-radius: 2.1429rem;
+  color: white !important;
+  -webkit-transition: var(--my-main-transition);
+  transition: var(--my-main-transition);
+  font-weight: 400;
+}
+
+ul.aa-nav-link--custom > li > a:hover,
+ul.aa-nav-link--custom > li > a.active {
+  border-color: var(--my-main-color);
+  color: var(--my-main-color) !important;
+}
+
+.aa-search {
+  padding-top: var(--my-main-padding-top);
+  padding-bottom: var(--my-main-padding-bottom);
+  background-image: url('../img/banner.png');
+  background-size: cover;
+  background-position: center center;
+  min-height: 30rem;
+}
+
+.aa-search input,
+.aa-search input:focus {
+  outline: none !important;
+  border: none !important;
+  padding: 1.5rem 3.5rem 1.5rem 1.5rem !important;
+  background: var(--my-main-dark-color) !important;
+  color: gray !important;
+  caret-color: gray !important;
+}
+
+.aa-search button {
+  right: 2% !important;
+  bottom: 50% !important;
+  -webkit-transform: translateY(50%) !important;
+  transform: translateY(50%) !important;
+  background-color: var(--my-main-color) !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.aa-output-weather-data {
+  transform: translateY(-15rem);
+}
+
+.aa-output-weather-data .aa-card {
+  background-color: #323544;
+}
+
+.aa-output-weather-data .aa-card .aa-card-header {
+  background-color: #2d303d;
+}
+
+.aa-output-weather-data .aa-card .card-body .aa-data {
+  padding: 2.1429rem;
+  text-transform: capitalize;
+}
+
+.aa-output-weather-data .aa-card .card-body .aa-data .aa-location {
+  font-size: 1.2857rem;
+}
+
+.aa-output-weather-data .aa-card .card-body .aa-data .aa-degree {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.aa-output-weather-data .aa-card .card-body .aa-data .aa-weather-type {
+  margin: 1.4286rem 0;
+  color: var(--my-main-color);
+  font-size: 1.2857rem;
+}
+
+footer {
+  padding-top: var(--my-main-padding-top);
+  padding-bottom: var(--my-main-padding-bottom);
+  background-color: #262936;
+}
+
+footer input,
+footer input:focus {
+  outline: none !important;
+  border: none !important;
+  padding: 1.5rem 3.5rem 1.5rem 1.5rem !important;
+  background: var(--my-main-dark-color) !important;
+  color: gray !important;
+  caret-color: gray !important;
+}
+
+footer button {
+  right: 2% !important;
+  bottom: 50% !important;
+  -webkit-transform: translateY(50%) !important;
+  transform: translateY(50%) !important;
+  background-color: var(--my-main-color) !important;
+  outline: none !important;
+  border: none !important;
+}
+
+footer button:hover,
+footer button:focus {
+  background-color: var(--my-main-color) !important;
+}
+
+footer .aa-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  footer .aa-social-links {
+    margin-top: 3rem;
+  }
+}
+
+footer .aa-social-links a {
+  background-color: var(--my-main-dark-color);
+  color: var(--my-main-color);
+  border-radius: 50%;
+  padding: 0.7143rem;
+  margin: 0.3571rem;
+  -webkit-transition: var(--my-main-transition);
+  transition: var(--my-main-transition);
+}
+
+footer .aa-social-links a:hover {
+  background-color: var(--my-main-color);
+  color: white;
+}
